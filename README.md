@@ -3,7 +3,9 @@
 INFORMATION BOT
 ---------------
 This is a wholesome bot helps you to create an epic profile.
+
 Creator: _NooberrUwU#7418
+
 *Special thanks to chaoboo12#5889 for the epic idea! (And he helped me a lot while coding!)
 This bot was coded in Pythowon. The module which I used is discord.py!
 
