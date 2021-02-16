@@ -35,6 +35,7 @@ FEATURES
   - Then, go to the profile file and edit.
 
 *Empty profile (without customized-properties):
+
 ![image](https://media.discordapp.net/attachments/808705440581287967/811264342174466048/unknown.png?width=422&height=353)
 
 By the way, the age property will be automatically calculated when you insert the year of date of birth! (If you haven't passed your birthday in the current year, the age will be deducted by 1)
