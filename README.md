@@ -12,6 +12,7 @@ LEAKING
 And yes, this bot sucks (ik already lul). It has only few commands but they are really good to be used!
 Do you want a custom profile like this?
 ![image](https://media.discordapp.net/attachments/808705440581287967/811258173188472872/unknown.png?width=491&height=421)
+
 If you're interested in creating your own profile like this, come and join with us UwU!
 
 Just an epic story about progress of creating the bot
@@ -35,13 +36,16 @@ FEATURES
 
 *Empty profile (without customized-properties):
 ![image](https://media.discordapp.net/attachments/808705440581287967/811264342174466048/unknown.png?width=422&height=353)
+
 By the way, the age property will be automatically calculated when you insert the year of date of birth! (If you haven't passed your birthday in the current year, the age will be deducted by 1)
 
 SETUP AND CUSTOMIZATION - BOT FOR YOURSELF
 ------------------------------------------
 - Firstly, setup your own bot at <https://discord.com/developers>
+
 *I recommend you to watch this video for more detail at creating a discord bot: <https://youtu.be/bAnmI4mwGcs>
 - Then, download this repository. (only `bot.py` and the data folder)
 - Change the `token` value in `./data/config.json`.
 - Run the bot in Terminal. (Make sure to run the bot in the correct directory)
+
 *By the way, you have to install Python (recommend on the lastest version) and the Discord.py module.
