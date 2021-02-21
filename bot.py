@@ -23,6 +23,8 @@ bot.remove_command("help")
 async def on_ready():
     print("Bot is ready!")
     print("This bot was coded by _NooberrUwU#7418")
+    print("Any bug in runtime will be logged in here.")
+    print("If you want to turn off the bot, press CTRL + C at the same time.")
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -88,10 +90,11 @@ async def configprofile(ctx, *args):
     availableKeyObject = ["irl_name","date_of_birth","gender","ig_name","gaming","description","girl_friend","boy_friend","best_friend","friend"]
     specialKeyObject_1 = ["date_of_birth","gender"]
     specialKeyObject_2 = ["gaming"]
-    # specialKeyObject_3 = ["best_friend","friend"]
+    specialKeyObject_3 = ["boy_friend","girl_friend"]
+    specialKeyObject_4 = ["best_friend","friend"]
 
     if len(args) == 0:
-        await ctx.send("__**Profile configurations command: !configprofile (KEY) (DATA)**__\nThe key here is the property which you want to config.\nData is the thing appear on your profile.\n```irl_name (string): In-real-life name\n\ndate_of_birth (list): Birthday\n!configprofile date_of_birth (DAY) (MONTH) (YEAR)\n\ngender (string): Gender\n!configprofile gender (1, 2, 3, 4)\n1 or Male: Male\n2 or Female: Female\n3: LGBT\n4: Don't want to say\n\ngaming (list): Your favourite game list\n\ndescription (string): Describe about yourself\n\n*Intamacy information incoming!```")
+        await ctx.send("__**Profile configurations command: !configprofile (KEY) (DATA)**__\nThe key here is the property which you want to config.\n```irl_name (string): In-real-life name\n\ndate_of_birth (list): Birthday\n!configprofile date_of_birth (DAY) (MONTH) (YEAR)\n\ngender (string): Gender\n!configprofile gender (1, 2, 3, 4)\n1 or Male: Male\n2 or Female: Female\n3: LGBT\n4: Don't want to say\n\ngaming (list): Your favourite game list\n\ndescription (string): Describe about yourself\n\n*Intamacy:\nboy_friend / girl_friend (string): You epic husband/wife\nbest_friend (list): A list contains all your best-friends, whom always help you\nfriend (list): Normal friend```")
     elif len(args) >= 2:
         try:
             with open("./data/profile.json","r", errors='ignore',encoding='utf-8') as data1:
@@ -106,7 +109,7 @@ async def configprofile(ctx, *args):
                 elif len(args) > 2:
                     input_data = args[1:len(args)]
                     input_data = " ".join(input_data).replace("\'","\\\'")
-            elif key_object == "date_of_birth":
+            elif key_object in availableKeyObject and key_object == "date_of_birth":
                 if len(args) == 4:
                     try:
                         day = int(args[1])
@@ -119,7 +122,7 @@ async def configprofile(ctx, *args):
                 else:
                     await ctx.send("🤔 Seems you wanted to set your date of birth, but you have done it with incorrect syntax! Please use: ```!configprofile date_of_birth (DAY) (MONTH) (YEAR)```\n***__Developer note:__** You must input the date in INTEGER value! Our algorithm will calculate your age. (It can even minus the age by 1 if you haven't passed the birthday in that current year)")
                     return
-            elif key_object == "gender":
+            elif key_object in availableKeyObject and key_object == "gender":
                 input_data = args[1]
                 if input_data.lower() in ["male","1"]:
                     input_data = "Male"
@@ -138,10 +141,16 @@ async def configprofile(ctx, *args):
 
             with open("./data/profile.json","r", errors="ignore", encoding="utf-8") as data1:
                 data = json.load(data1)
-            if key_object not in specialKeyObject_2:
-                data[str(authorId)][key_object] = input_data
-            else:
+
+            if key_object in specialKeyObject_2:
                 data[str(authorId)][key_object].append(input_data)
+            elif key_object in specialKeyObject_3:
+                data[str(authorId)]["intamacy"][key_object] = input_data
+            elif key_object in specialKeyObject_4:
+                data[str(authorId)]["intamacy"][key_object].append(input_data)
+            else:
+                data[str(authorId)][key_object] = input_data
+
             with open("./data/profile.json","w", errors="ignore", encoding="utf-8") as data1:
                 json.dump(data,data1,indent=2)
 
@@ -157,11 +166,21 @@ async def resetproperty(ctx, *args):
     if len(args) == 1:
         key = args[0]
         clearableKeyObject = ["gaming","best_friend","friend"]
-        if key in clearableKeyObject:
+        if key in clearableKeyObject and key == "gaming":
             try:
                 with open("./data/profile.json","r") as data1:
                     data = json.load(data1)
                 data[str(authorId)][key] = []
+                with open("./data/profile.json","w") as data1:
+                    json.dump(data,data1,indent=2)
+                await ctx.send("👍 Your \"{}\" property in our data file has been reset!".format(key))
+            except:
+                await ctx.send("😓 You haven't create a profile, create one!")
+        elif key in clearableKeyObject and key != "gaming":
+            try:
+                with open("./data/profile.json","r") as data1:
+                    data = json.load(data1)
+                data[str(authorId)]["intamacy"][key] = []
                 with open("./data/profile.json","w") as data1:
                     json.dump(data,data1,indent=2)
                 await ctx.send("👍 Your \"{}\" property in our data file has been reset!".format(key))
@@ -251,7 +270,9 @@ async def profile(ctx, *users : discord.User):
 
         dof = day + "/" + month + "/" + year
 
-        if int(day) < current_day or int(month) < current_month:
+        if int(month) > current_month:
+            age = current_year - int(year) - 1
+        elif int(month) == current_month and int(day) < current_day:
             age = current_year - int(year) - 1
         else:
             age = current_year - int(year)
