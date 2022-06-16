@@ -70,9 +70,10 @@ Our ***Beta-version*** of **Chiharu Discord Bot v3.0** supports a large number o
 ```
 You must keep those bracket *(actually you can remove them but it'll miss the data that we provide)*, you can put those brackets anywhere you want in the string, but please keep them, don't remove those!
 - By the way, we also support `Unicode UTF-8` characters, so don't worry about the fact that your language contains non-latin characters :D
-
-For example: `Vietnamese: ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ`
-
+```
+For example:
+	Vietnamese: ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ
+```
 *These are things that we have done the development, but still remains some bugs and unstable statuses, also we're too lazy to write those documentations, so see ya in a later date.*
 
 **2. (Coming soon) Custom property in user profile**
