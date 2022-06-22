@@ -1,0 +1,25 @@
+{
+  "color": ["Color", "The color on the left side of the profile."],
+  "link": ["Top Link", "The blue text that appears on the upper edge of the profile."],
+  "image": ["Bottom Image", "The image that appears on the lower side of the profile."],
+  "discord": ["Discord Full-username", "Discord Username which includes the discriminator."],
+  "irl_name": ["In-real-life Name", "Your name which you use in real life."],
+  "friendly_name": ["Nickname/Friendly Name", "The name which only close friends can call you by this badboi."],
+  "address": ["Address", "(Usually hidden) Your address."],
+  "phone_number": ["Phone Number", "(Usually hidden) Your phone number."],
+  "nationality": ["Nationality", "Your nationality based on your home-country"],
+  "date_of_birth": ["Date Of Birth", "The most beautiful day."],
+  "gender": ["Sex/Gender", "Your gender (can be Sexual Orientation)"],
+  "ig_name": ["In-game Name", "The name that you use to refer to yourself in the game."],
+  "games": ["Favorite Games", "The games which you enjoyed playing."],
+  "description": ["Description", "Describe about yourself."],
+  "school": ["School", "The name of your offline battleground."],
+  "class": ["Class", "Your class."],
+  "intimacy": {
+    "girl_friend": ["Girlfriend", "Simp."],
+    "boy_friend": ["Boyfriend", "Also simp."],
+    "best_friends": ["Best-friend", "The guys who always beside you."],
+    "friends": ["Friend", "Friends"]
+  },
+  "hidden": ["Hidden Properties", "The keys from were hidden from the profile."]
+}

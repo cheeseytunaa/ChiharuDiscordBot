@@ -1,0 +1,5 @@
+{
+  "author_not_in_a_voice_channel": ["Uh oh!", "RED", "You're not in a voice channel!"],
+  "join_a_voice_channel": ["Joined {CHANNEL}.", "GREEN", "Joined **{AUTHOR}**'s voice channel."],
+  "move_to_a_voice_channel": ["Moved to {CHANNEL}.", "GREEN", "Moved to **{AUTHOR}**'s voice channel."]
+}

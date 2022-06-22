@@ -1,0 +1,175 @@
+{
+    "language_configurations": {
+      "language": "Vietnamese",
+      "language_name": "Vietnamese",
+      "country_id": "VI",
+      "language_id": "vi",
+      "language_code": "vi-VI",
+      "language_file": "vi_vi",
+      "flag_code": "vn",
+      "flag_emoji": ":flag_vn:"
+    },
+    "variables": {
+      "no_information": "No information available.",
+      "no_description": "No description available.",
+      "ended_prompt_button_label": "This prompt has ended.",
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "LGBT": "I'm from the LGBT Community! 🏳️‍🌈",
+        "hidden": "I don't want to talk about it!"
+      },
+      "not_author": [
+        "Ay {USERNAME}, yes you!",
+        "RED",
+        "These interactions are not for you! You're not the author of this message!"
+      ]
+    },
+    "command_language": {
+      "choose_language_placeholder": "Choose a language!",
+      "change_language_button_label": "Change language",
+      "localization_button_label": "Localizations and Translations",
+      "info": [
+        "There are currently {NUMBER} available languages!",
+        "GREEN",
+        [
+          "They are: **{LANGUAGES}**.",
+          "Currently using: **{CURRENT_LANGUAGE}**.",
+          "",
+          "To change language, click the green button.",
+          "For more information about localizations, click the gray button."
+        ]
+      ],
+      "change_language_guide":[
+        "Choose your language:",
+        "ORANGE",
+        [
+          "Select the language you want to use.",
+          "**Tip:** You can also execute this command to change language: ```{PREFIX}language <LANGUAGE>```"
+        ]
+      ],
+      "changed_successfully": [
+        "Noice!",
+        "GREEN",
+        "Your language has been successfully changed to **{NEW_LANGUAGE}**!"
+      ],
+      "language_not_found": [
+        "Language not found!",
+        "RED",
+        "Please check the spelling of the language you want to use. Otherwise do the following to see the full list of available languages: ```{PREFIX}language```"
+      ]
+    },
+    "command_create_profile": {
+      "created_successfully": [
+        "Naisu!",
+        "GREEN",
+        [
+          "Your profile has been created successfully! (Saved in our data base)",
+          "To **config** your profile, do the following: ```{PREFIX}config <KEY> <VALUE>```",
+          "To **delete** your profile, do the following: ```{PREFIX}delete```",
+          "To **export** your/someone's profile, do the following: ```{PREFIX}export [USER]```"
+        ]
+      ],
+      "profile_already_existed": [
+        "Whoopsie!",
+        "RED",
+        "Your profile is already existed! You can't create more than 1 profile, our data storage are limited. :("
+      ]
+    },
+    "command_delete_profile": {
+      "button_yes_label": "Yes, delete mine!",
+      "button_no_label": "No, that was a mistake!",
+      "confirm_delete": [
+        "Hey, are you sure you want to delete your profile?",
+        "YELLOW",
+        "Are you sure? **(Y/N)**"
+      ],
+      "deleted_successfully": [
+        "The profile was deleted from database!",
+        "PURPLE",
+        "We're sorry to see you leave!"
+      ],
+      "undid_successfully": [
+        "The action was undid!",
+        "PURPLE",
+        "We're glad to see you back!"
+      ],
+      "profile_not_found": [
+        "Ayyyyy!",
+        "RED",
+        "Your profile is not found! You can't delete a profile that doesn't exist. :("
+      ]
+    },
+    "command_display_profile": {
+      "author_title_display": "Executed by: {EXECUTOR}",
+      "profile_not_found": [
+        "Oh ehhhhhhhh!",
+        "RED",
+        "Profile of **{USERNAME}** cannot be found! You can't display a profile that doesn't exist. :("
+      ],
+      "profile_to_be_displayed": [
+        "Profile of {USERNAME}:",
+        "PURPLE",
+        [
+          "*{DESCRIPTION}*",
+          "",
+          "In-real-life name: **{IRL_NAME}**",
+          "Nickname: **{FRIENDLY_NAME}**",
+          "Address: **{ADDRESS}**",
+          "Phone number: **{PHONE_NUMBER}**",
+          "Nationality: **{NATIONALITY}**",
+          "Date of birth: **{DATE_OF_BIRTH}**",
+          "Age: **{AGE}**",
+          "Gender: **{GENDER}**",
+          "In-game name: **{IG_NAME}**",
+          "Discord username: **{DISCORD}**",
+          "School: **{SCHOOL}**",
+          "Class: **{CLASS}**",
+          "Favorite games: **{GAMES}**",
+          "",
+          "__**Intimacy information:**__",
+          "• Girlfriend: **{GIRL_FRIEND}**",
+          "• Boyfriend: **{BOY_FRIEND}**",
+          "• Best friends: **{BEST_FRIENDS}**",
+          "• Friends: **{FRIENDS}**"
+        ]
+      ]
+    },
+    "command_config_profile": {
+      "config_button_label": "Config",
+      "tutorial_button_label": "Tutorial",
+      "choose_action": [
+        "Custom profile configurations command:",
+        "ORANGE",
+        [
+          "*\\*Do the command without any argument will display this guide.*",
+          "",
+          "To **change** your profile information, do the following: ```{PREFIX}config <KEY> <VALUE>```",
+          "or instead of doing that way, you can click the **{CONFIG_BUTTON_LABEL}** button below and follow our tutorial.",
+          "",
+          "For more information, click the **{TUTORIAL_BUTTON_LABEL}** button, I'll show you the full tutorial."
+        ]
+      ]
+    },
+    "command_feedback": {
+      "popup_window": {
+        "title": "Send us your feedback!",
+        "feedback_input_placeholder": "Tell us your thinking...",
+        "incognito_send_input_placeholder": "Yes/No or True/False, default is False..."
+      },
+      "button_feedback_label": "I want to make a feedback!",
+      "feedback_guide": [
+        "Feedback tutorial:",
+        "ORANGE",
+        [
+          "Type the feedback in the box, and we'll send it to our developers.",
+          "You can also write it in **English**, but it'll automatically translate it to **Vietnamese** for you."
+        ]
+      ],
+      "feedback_sent": [
+        "Thank you for your feedback!",
+        "GREEN",
+        "We're glad to hear from you! :D"
+      ]
+    }
+  }

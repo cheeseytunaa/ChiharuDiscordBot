@@ -1,0 +1,7 @@
+{
+  "language": ["changelanguage", "changelan", "setlanguage", "setlang", "lang"],
+  "create": ["createprofile", "addprofile", "newprofile", "saveprofile", "add", "new", "save"],
+  "delete": ["deleteprofile", "delprofile", "removeprofile", "remove", "del"],
+  "profile": ["showprofile", "displayprofile", "show", "display"],
+  "config": ["edit", "editprofile", "configprofile"]
+}

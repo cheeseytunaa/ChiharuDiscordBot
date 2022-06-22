@@ -1,0 +1,44 @@
+{
+  "color": "CHAOCHAODEPTRAI",
+  "link": "https://chaosocute.ml/",
+  "image": "https://cdn.discordapp.com/attachments/908358719945994301/986160620376313886/unknown.png",
+  "discord": "chaochao12#2225",
+  "irl_name": "Lê Phú Trọng",
+  "friendly_name": "",
+  "address": "Khu 2 Hoàng Dương, Thanh Ba, Phú Thọ",
+  "phone_number": "0886034607",
+  "nationality": "Việt Nam",
+  "date_of_birth": [
+    3,
+    4,
+    2007
+  ],
+  "gender": 1,
+  "ig_name": "Chaochao",
+  "games": [
+    "LMHT",
+    "Minecraft",
+    "Roblox",
+    "Stardew Valley",
+    "Genshin Impact",
+    "Pokemon"
+  ],
+  "description": "Ok",
+  "school": "THPT Chuyên Trần Đại Nghĩa",
+  "class": "10CTIN",
+  "intimacy": {
+    "girl_friend": "000000",
+    "boy_friend": "000000",
+    "best_friends": [
+      "Nova9935",
+      "LMT29",
+      "Thanks",
+      "Socola Lười",
+      "huynhphuongg"
+    ],
+    "friends": [
+      "Ok"
+    ]
+  },
+  "hidden": ["address"]
+}
