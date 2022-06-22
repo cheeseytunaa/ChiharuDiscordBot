@@ -1,0 +1,134 @@
+{
+  "language_configurations": {
+    "language": "English",
+    "language_name": "American English",
+    "country_id": "US",
+    "language_id": "en",
+    "language_code": "en-US",
+    "language_file": "custom_language",
+    "flag_code": "us",
+    "flag_emoji": ":flag_us:"
+  },
+  "variables": {
+    "no_information": "",
+    "no_description": "",
+    "ended_prompt_button_label": "",
+    "genders": {
+      "male": "",
+      "female": "",
+      "LGBT": "",
+      "hidden": ""
+    },
+    "not_author": [
+      "",
+      "RED",
+      ""
+    ]
+  },
+  "command_language": {
+    "choose_language_placeholder": "",
+    "change_language_button_label": "",
+    "localization_button_label": "",
+    "info": [
+      "",
+      "GREEN",
+      []
+    ],
+    "change_language_guide":[
+      "",
+      "ORANGE",
+      []
+    ],
+    "changed_successfully": [
+      "",
+      "GREEN",
+      ""
+    ],
+    "language_not_found": [
+      "",
+      "RED",
+      ""
+    ]
+  },
+  "command_create_profile": {
+    "created_successfully": [
+      "",
+      "GREEN",
+      []
+    ],
+    "profile_already_existed": [
+      "",
+      "RED",
+      ""
+    ]
+  },
+  "command_delete_profile": {
+    "button_yes_label": "",
+    "button_no_label": "",
+    "confirm_delete": [
+      "",
+      "YELLOW",
+      ""
+    ],
+    "deleted_successfully": [
+      "",
+      "PURPLE",
+      ""
+    ],
+    "undid_successfully": [
+      "",
+      "PURPLE",
+      ""
+    ],
+    "profile_not_found": [
+      "",
+      "RED",
+      ""
+    ]
+  },
+  "command_display_profile": {
+    "author_title_display": "",
+    "profile_not_found": [
+      "",
+      "RED",
+      ""
+    ],
+    "profile_to_be_displayed": [
+      "",
+      "PURPLE",
+      []
+    ]
+  },
+  "command_config_profile": {
+    "config_button_label": "",
+    "tutorial_button_label": "",
+    "choose_action": [
+      "",
+      "ORANGE",
+      []
+    ],
+    "config_guide": [
+      "",
+      "ORANGE",
+      []
+    ]
+  },
+  "command_feedback": {
+    "popup_window": {
+      "title": "",
+      "feedback_input_placeholder": "",
+      "incognito_send_input_placeholder": ""
+    },
+    "button_feedback_label": "",
+    "feedback_guide": [
+      "",
+      "ORANGE",
+      []
+    ],
+    "feedback_sent": [
+      "",
+      "GREEN",
+      ""
+    ]
+  }
+}
