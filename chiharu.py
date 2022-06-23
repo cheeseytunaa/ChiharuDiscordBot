@@ -88,8 +88,12 @@ def get_language_data(current_language: str) -> dict:
   return get_json_data(f"data/languages/{current_language}.json")
 
 
-def get_alias_data() -> dict:
-  return get_json_data(f"data/command_alias.json")
+def get_alias_data(command: str = None) -> dict:
+  data = get_json_data(f"data/command_alias.json")
+  if not command or command not in list(data.keys()):
+    return data
+  else:
+    return data[command]
 
 
 # Color codes handler
@@ -124,6 +128,11 @@ def date() -> tuple:
 def get_files(directory: str) -> list:
   # return os.listdir(directory) # This is the old way / deprecated
   return [file for file in os.listdir(directory) if os.path.isfile(os.path.join(directory, file))]
+
+
+# Get all sub-directories in a directory
+def get_sub_directories(directory: str) -> list:
+  return [sub_directory for sub_directory in os.listdir(directory) if os.path.isdir(os.path.join(directory, sub_directory))]
 
 
 # Remove file

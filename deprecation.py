@@ -24,13 +24,3 @@
 #     await interaction.response.edit_message(embed=HEmbed(command_language_data["feedback_confirm"]), view=None)
 #     doing_feedback.append(interaction.user.id)
 #     await feedback(ctx)
-
-from ast import arg
-
-
-aa = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-def a(*args):
-  print(args)
-  
-a(aa)

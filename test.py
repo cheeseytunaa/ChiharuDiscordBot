@@ -388,13 +388,9 @@
 # }
 # print(list(user_data_base.keys()))
 
-test = ""
+# import chiharu
 
-def function_1():
-  global test
-  test = {"test"}
-def function_2():
-  function_1()
-  print(test)
-  
-function_2()
+# print(chiharu.get_sub_directories("."))
+
+# print([folder for folder in chiharu.get_sub_directories(".") if folder.startswith("_")])
+# print([folder for folder in chiharu.get_sub_directories(".") if folder.startswith("_") and not "__pycache__"])

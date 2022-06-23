@@ -2,5 +2,6 @@
   "prefix": "e!",
   "version": "3.0.0",
   "language": "en_us",
-  "website_domain": "http://192.168.69.101:8080"
+  "website_domain": "http://192.168.69.101:8080",
+  "debug_mode": true
 }
