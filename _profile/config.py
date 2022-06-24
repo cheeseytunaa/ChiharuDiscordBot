@@ -58,11 +58,16 @@ class ConfigProfile(ChiharuCog):
         save_json_data(f"data/profiles/{str(author.id)}.json", user_data)
 
     if f"{str(author.id)}.json" in get_files("data/profiles"):
-      choose_action_message_data = HData(command_language_data["choose_action"])
-      choose_action_message_data.replace_var("{PREFIX}", ctx.prefix)
-      choose_action_message_data.replace_var("{CONFIG_BUTTON_LABEL}", command_language_data["config_button_label"])
-      choose_action_message_data.replace_var("{TUTORIAL_BUTTON_LABEL}", command_language_data["tutorial_button_label"])
-      choose_action_message = await ctx.reply(embed=HEmbed(choose_action_message_data), view=ChooseAction(), mention_author=False)
+      if key and value:
+        user_template = create.CreateProfile(self.bot).user_profile_template
+        available_keys = list(user_template.keys())
+        available_keys = [key for key in available_keys if key not in create.CreateProfile(self.bot).uneditable_property_list]
+      else:
+        choose_action_message_data = HData(command_language_data["choose_action"])
+        choose_action_message_data.replace_var("{PREFIX}", ctx.prefix)
+        choose_action_message_data.replace_var("{CONFIG_BUTTON_LABEL}", command_language_data["config_button_label"])
+        choose_action_message_data.replace_var("{TUTORIAL_BUTTON_LABEL}", command_language_data["tutorial_button_label"])
+        choose_action_message = await ctx.reply(embed=HEmbed(choose_action_message_data), view=ChooseAction(), mention_author=False)
     else:
       error_message_data = HData(self.bot.language_data["command_display_profile"]["profile_not_found"])
       error_message_data.replace_var("{USERNAME}", str(author))

@@ -1,0 +1,25 @@
+{
+  "color": "PINK",
+  "link": "https://chungtoithichnhon.ml",
+  "image": "https://images3.alphacoders.com/119/1197606.png",
+  "discord": "Chifuta#3652",
+  "irl_name": "Nguyễn Đức Tuân",
+  "friendly_name": "Mèo nghiện",
+  "address": "Số 9, ngõ 64, tổ 6, đường Cầu Diễn, phường Phúc Diễn, quận Bắc Từ Liêm, Hà Nội, Việt Nam",
+  "phone_number": "0398786968",
+  "nationality": "Vietnamese",
+  "date_of_birth": [11, 12, 2006],
+  "gender": 1,
+  "ig_name": "_NooberrUwU",
+  "games": ["Geometry Dash, CS:GO"],
+  "description": "An addicted cat, who loves doing chemistry and maths.",
+  "school": "Nguyễn Thị Minh Khai High School",
+  "class": "10A1",
+  "intimacy": {
+    "girl_friend": "",
+    "boy_friend": "",
+    "best_friends": ["a lot"],
+    "friends": ["ye also a lot"]
+  },
+  "hidden": ["address", "phone_number"]
+}

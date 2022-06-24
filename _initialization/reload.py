@@ -34,6 +34,9 @@ class Reload(ChiharuCog):
         await self.bot.load_extension(cog)
         # await ctx.send(f"Loaded successfully: **{cog}**")
 
+    self.bot.current_language = get_json_data("data/config.json")["language"].lower()
+    self.bot.language_data = get_language_data(self.bot.current_language)
+
     await ctx.send("Reloaded!")
 
   @commands.Cog.listener()

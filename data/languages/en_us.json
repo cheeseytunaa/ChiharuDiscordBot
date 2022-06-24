@@ -169,9 +169,7 @@
       [
         "*\\*Do the command without any argument will display this guide.*",
         "",
-        "To **change** your profile information, do the following: ```{PREFIX}config <KEY> <VALUE>```",
-        "or instead of doing that way, you can click the **{CONFIG_BUTTON_LABEL}** button below and follow our tutorial.",
-        "",
+        "To **change** your profile information, click the **{CONFIG_BUTTON_LABEL}** button below and follow our tutorial. Otherwise instead of doing that way, do the following: ```{PREFIX}config <KEY> <VALUE>```",
         "For more information, click the **{TUTORIAL_BUTTON_LABEL}** button, I'll show you the full tutorial."
       ]
     ],
